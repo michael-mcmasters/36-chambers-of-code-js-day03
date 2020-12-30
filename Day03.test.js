@@ -21,6 +21,13 @@ test("SimpleEvens test02", () => {
     expect(actual).toEqual(expected);
 });
 
+test("Our Test", () => {
+    let problem = new Problem();
+    let expected = true;
+    let actual = problem.questionsMarks("arrb6???4xxbl5???eee5");
+    expect(actual).toEqual(expected);
+});
+
 
 test("QuestionsMarks test01", () => {
 
@@ -32,12 +39,12 @@ test("QuestionsMarks test01", () => {
     expect(actual).toEqual(expected);
 });
 
-test("QuestionsMarks test01", () => {
+test("snakeCase test01", () => {
 
     let problem = new Problem();
     let expected = "cats_and_dogs_are_awesome";
 
-    let actual = problem.questionsMarks("cats AND*Dogs-are Awesome");
+    let actual = problem.snakeCase("cats AND*Dogs-are Awesome");
 
     expect(actual).toEqual(expected);
 });
